@@ -1,10 +1,10 @@
-import React from 'react'
 import CRDIcon from '@material-ui/icons/DeviceHubTwoTone'
 import GraphIcon from '@material-ui/icons/AssessmentOutlined'
 import HomeIcon from '@material-ui/icons/HomeOutlined'
+import React from 'react'
 import VSMIcon from '@material-ui/icons/AccountTreeTwoTone'
 
-import CurrentReality from './CurrentReality'
+import CurrentRealityDiagram from './CurrentRealityDiagram'
 import Dashboard from './Dashboard'
 import Home from './Home'
 import ValueStream from './ValueStream'
@@ -17,16 +17,16 @@ const Routes = [
     component: Home,
   },
   {
-    path: '/ValueStream',
+    path: '/valuestream',
     sidebarName: 'Value Stream Map',
     icon: <VSMIcon />,
     component: ValueStream,
   },
   {
-    path: '/CurrentReality',
+    path: '/currentreality',
     sidebarName: 'Current Reality',
     icon: <CRDIcon />,
-    component: CurrentReality,
+    component: CurrentRealityDiagram,
   },
   {
     path: '/dashboard',
